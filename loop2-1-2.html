@@ -1,0 +1,32 @@
+<!-- 사용자가 입력한 숫자가 소수인지 아닌지 판별하는 프로그램 -->
+
+<!Doctype html>
+<html>
+    <head>
+        <body>
+            <script>
+
+                var input = Number(prompt("2 이상의 숫자를 입력하세요."));
+                var isPrime = true;
+
+                for(var i=2; i<input; i++){
+                    if(input % i === 0){
+                    isPrime = false;
+                    break;
+                }
+                    console.log(i, input);
+                }
+             
+
+                    if(isPrime === true){
+                        document.write("입력하신 숫자 " + input + "은 소수입니다.");
+                    }
+                    else if(isPrime === false){
+                        document.write("입력하신 숫자 " + input + "은 소수가 아닙니다.");
+                    }
+
+
+            </script>
+        </body>
+    </head>
+</html>
