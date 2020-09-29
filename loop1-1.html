@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h2>사용자가 입력한 수들의 갯수와 합을 구하는 프로그램을 작성해 봅시다. (단 0을 입력받으면 입력 종료) </h2>
+            <script>
+                
+                var sum = 0;
+                var boo = true;
+                var count = 0;
+
+                while(boo){
+                    var input = Number(prompt("숫자를 입력하세요"));
+                    sum = sum + input;
+                    
+                    if(input === 0){
+                        break;
+                    }
+            
+                    count++;
+                }
+                
+                document.write("입력한 숫자들의 합은 " + sum + "이고, 갯수는 " + count + "입니다.")
+
+            </script>
+        </body>
+    </head>
+</html>
